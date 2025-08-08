@@ -18,8 +18,7 @@ app.use(express.json());
 app.use(
   cors({
     origin: [
-      "https://prescriptofrontend-kappa.vercel.app", // your frontend URL
-      "http://localhost:3000" // optional: for local testing
+      "https://prescriptofrontend-kappa.vercel.app"
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
