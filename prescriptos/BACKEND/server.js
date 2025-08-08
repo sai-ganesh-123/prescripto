@@ -16,8 +16,21 @@ connectCloudinary();
 //middleware
 app.use(express.json());
 app.use(
-  cors()
+  cors({
+    origin: [
+      "https://prescriptofrontend-kappa.vercel.app", // your frontend URL
+      "http://localhost:3000" // optional: for local testing
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true
+  })
 );
+
+// Handle preflight requests
+app.options("*", cors());
+
+
 
 //api endpoints
 app.use("/api/admin", adminRouter);
