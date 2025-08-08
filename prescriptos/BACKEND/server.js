@@ -16,18 +16,9 @@ connectCloudinary();
 //middleware
 app.use(express.json());
 app.use(
-  cors({
-    origin: [
-      "https://prescriptofrontend-kappa.vercel.app"
-    ],
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true
-  })
+  cors()
 );
 
-// Handle preflight requests
-app.options("*", cors());
 
 
 
