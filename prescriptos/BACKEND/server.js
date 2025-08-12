@@ -31,6 +31,7 @@ app.get("/", (req, res) => {
   res.send("API is running GOOD");
 });
 
+//api listens
 app.listen(port, () => {
   console.log("SERVER STARTED ON PORT", port);
 });
