@@ -19,10 +19,7 @@ app.use(express.json());
 // Explicitly allow your frontend domain
 app.use(
   cors({
-    origin: "https://prescriptofrontend1.vercel.app",
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true, // if you use cookies or auth headers
+    origin: "https://prescriptofrontend1.vercel.app"
   })
 );
 
