@@ -18,9 +18,7 @@ app.use(express.json());
 
 // Explicitly allow your frontend domain
 app.use(
-  cors({
-    origin: "https://prescriptofrontend1.vercel.app"
-  })
+  cors()
 );
 
 //api endpoints
