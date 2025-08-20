@@ -73,7 +73,7 @@ This project leverages the following technologies:
 *   **JSON Web Token (JWT)**: For secure authentication between parties.
 *   **NodeMon**: A utility that monitors for any changes in your source and automatically restarts your server.
 *   **Validator**: A library of string validators and sanitizers.
-*   **Razorpay**: A payment gateway for online transactions.
+*   **Stripe**: A payment gateway for online transactions.
 
 ### Development Tools
 *   **VS Code**: The primary code editor.
